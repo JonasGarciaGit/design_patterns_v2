@@ -1,6 +1,6 @@
 import creationalPatterns.abstractFactory.AbstractFactoryApplication;
-import creationalPatterns.abstractFactory.FirePokemonFactory;
-import creationalPatterns.abstractFactory.WaterPokemonFactory;
+import creationalPatterns.abstractFactory.factoryInterface.impl.FirePokemonFactory;
+import creationalPatterns.abstractFactory.factoryInterface.impl.WaterPokemonFactory;
 import creationalPatterns.factoryMethod.subclass.RoadLogistics;
 import creationalPatterns.factoryMethod.subclass.SeaLogistics;
 import creationalPatterns.factoryMethod.superclass.Logistic;

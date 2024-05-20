@@ -1,4 +1,6 @@
-package creationalPatterns.abstractFactory;
+package creationalPatterns.abstractFactory.productInterface.impl;
+
+import creationalPatterns.abstractFactory.productInterface.Bulbasaur;
 
 public class FireBulbasaur implements Bulbasaur {
     @Override

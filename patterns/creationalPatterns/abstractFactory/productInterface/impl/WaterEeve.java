@@ -1,4 +1,6 @@
-package creationalPatterns.abstractFactory;
+package creationalPatterns.abstractFactory.productInterface.impl;
+
+import creationalPatterns.abstractFactory.productInterface.Eeeve;
 
 public class WaterEeve implements Eeeve {
     @Override

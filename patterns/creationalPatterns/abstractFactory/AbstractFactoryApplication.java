@@ -1,5 +1,9 @@
 package creationalPatterns.abstractFactory;
 
+import creationalPatterns.abstractFactory.factoryInterface.PokemonFactory;
+import creationalPatterns.abstractFactory.productInterface.Bulbasaur;
+import creationalPatterns.abstractFactory.productInterface.Eeeve;
+
 public class AbstractFactoryApplication {
 
     private PokemonFactory pokemonFactory;
