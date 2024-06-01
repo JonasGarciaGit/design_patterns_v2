@@ -1,12 +1,15 @@
 import creationalPatterns.abstractFactory.AbstractFactoryApplication;
 import creationalPatterns.abstractFactory.factoryInterface.impl.FirePokemonFactory;
 import creationalPatterns.abstractFactory.factoryInterface.impl.WaterPokemonFactory;
+import creationalPatterns.builder.builderInterface.impl.HouseBuilderImpl;
 import creationalPatterns.builder.director.Director;
 import creationalPatterns.builder.model.House;
-import creationalPatterns.builder.builderInterface.impl.HouseBuilderImpl;
+import creationalPatterns.factoryMethod.subclass.AirLogistics;
 import creationalPatterns.factoryMethod.subclass.RoadLogistics;
 import creationalPatterns.factoryMethod.subclass.SeaLogistics;
 import creationalPatterns.factoryMethod.superclass.Logistic;
+import creationalPatterns.prototype.Circle;
+import creationalPatterns.prototype.Square;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,8 +18,10 @@ public class Main {
         System.out.println("---------- FACTORY METHOD ---------");
         Logistic logisticTruck = new RoadLogistics();
         Logistic logisticShip = new SeaLogistics();
+        Logistic logisticAirplane = new AirLogistics();
         logisticTruck.planDelivery();
         logisticShip.planDelivery();
+        logisticAirplane.planDelivery();
         System.out.println("----------------------------------- \n");
 
         //Abstract Factory
@@ -43,5 +48,12 @@ public class Main {
         System.out.println("Simple House ::  " + simpleHouse.toString());
         System.out.println("Expensive House ::  " + expensiveHouse.toString());
         System.out.println("----------------------------------- \n");
+
+        //Prototype
+        Circle circle = new Circle("blue");
+        Square square = new Square("red");
+        System.out.println("Circle color of the clone :: " + circle.clone().color );
+        System.out.println("Square color of the clone :: " + square.clone().color );
+
     }
 }
